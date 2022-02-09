@@ -1,1 +1,4 @@
-print('hello from github')
+def hi():
+    print ('Hello world!')
+
+print(hi())
