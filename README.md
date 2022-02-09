@@ -9,3 +9,8 @@ how to add new code line to github from local computer
 2- git add README.md (or any file name example.py)
 3-git commit -m 'from local computer MacOs'
 4-git push origin main
+
+
+how to add new code FROM github?
+1-changed the code in github.com
+2- git pull origin main
