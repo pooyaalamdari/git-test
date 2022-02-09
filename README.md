@@ -14,3 +14,8 @@ how to add new code line to github from local computer
 how to add new code FROM github?
 1-changed the code in github.com
 2- git pull origin main
+
+
+how to Install special project in your local computer from github?
+
+use -> git clone [https] or [ssh] 
