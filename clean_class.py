@@ -19,3 +19,4 @@ class Tiger(Animal):
 #NOT Animal class
 tiger = Tiger()
 tiger.speak()
+print(tiger.fur_color)
