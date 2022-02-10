@@ -1,6 +1,8 @@
 class Animal:
     fur_color = 'Orange'
 
+    animal_type = 'unknown'
+
     #1-at the first this code line was running :D
     def __init__(self, fur_color):
         self.fur_color = fur_color
@@ -21,7 +23,14 @@ class Animal:
 
 class Tiger(Animal):
 
-    fur_color = 'Black'
+
+    def __init__(self,fur_color):
+
+        #__init__ is for Animal class
+        super().__init__(fur_color)
+        print('fur color was saved to the class obj')
+        self.animal_type = 'Siberian tiger!'
+        print(self.animal_type)
 
     def eat(self):
         #if we want to run eat method in Animal class
@@ -43,3 +52,5 @@ class Tiger(Animal):
 #NOT Animal class
 tiger = Tiger('Grey')
 tiger.get_fur_color()
+
+# ✅ dunder was execute first all of other codes 
