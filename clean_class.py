@@ -7,8 +7,9 @@ class Animal:
     def eat(self):
         print('I am eating yum yum yum!')
 
-    def chase(self):
-        pass
+    #by default -> Gazeller
+    def chase(self, animal='Gazelle'):
+        print('I am chasing', animal)
 
 class Tiger(Animal):
 
@@ -23,7 +24,13 @@ class Tiger(Animal):
         super().eat()
         print('I am eating salmon')
 
+    #chase is (Animal class) method
+    # animal is (Animal class) chase method's argument
+    def chase(self,animal):
+        super().chase(animal)
+        print(animal,'was caught')
+
 #type(tiger) -> Tiger Class
 #NOT Animal class
 tiger = Tiger()
-tiger.eat()
+tiger.chase('rabit') 
