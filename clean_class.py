@@ -10,5 +10,8 @@ class Animal:
     def chase(self):
         pass
 
-tiger = Animal()
+class Tiger(Animal):
+    pass
+
+tiger = Tiger()
 tiger.speak()
