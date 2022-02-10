@@ -3,7 +3,7 @@ class Animal:
 
     #1-at the first this code line was running :D
     def __init__(self, fur_color):
-        print(f"Fur color is {fur_color}")
+        self.fur_color = fur_color
 
     def speak(self):
         raise NotImplementedError
@@ -15,6 +15,9 @@ class Animal:
     #2-then this code was run
     def chase(self, animal='Gazelle'):
         print('I am chasing', animal)
+
+    def get_fur_color(self):
+        print('Getting fur color: ', self.fur_color)
 
 class Tiger(Animal):
 
@@ -39,4 +42,4 @@ class Tiger(Animal):
 #type(tiger) -> Tiger Class
 #NOT Animal class
 tiger = Tiger('Grey')
-tiger.chase('rabit')
+tiger.get_fur_color()
