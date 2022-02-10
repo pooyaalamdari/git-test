@@ -6,6 +6,10 @@ class Animal:
 
     this_list = ['kane','patrick','bob']
 
+    def add_name(self,name):
+        self.this_list.append(name)
+        return self.this_list
+
     def this_is_a_method(self):
         print(self.this_list)
 
@@ -15,12 +19,8 @@ class Animal:
 
 
 the_animal = Animal()
-#we ignore the self and we don't use in ()
-the_animal.this_is_a_method()
 
-#because we use return
-#we don't use ()
-#the_animal -> is class
-#get_bob -> is property
-bob = the_animal.get_bob
-print('the best person is',bob)
+#we ignor self but take name
+the_animal.add_name('Rhubarb')
+#because retun this_list
+print(the_animal.this_list)
