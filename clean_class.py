@@ -11,6 +11,9 @@ class Animal:
         pass
 
 class Tiger(Animal):
+
+    fur_color = 'Black'
+
     def speak(self):
         print('They are GREEEAAAT')
 
