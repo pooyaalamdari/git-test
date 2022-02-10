@@ -20,5 +20,7 @@ the_animal.this_is_a_method()
 
 #because we use return
 #we don't use ()
+#the_animal -> is class
+#get_bob -> is property
 bob = the_animal.get_bob
 print('the best person is',bob)
