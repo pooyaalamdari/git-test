@@ -17,19 +17,9 @@ class Animal:
     this_list = ['kane','patrick','bob']
 
     def this_is_a_method(self):
+        print(self.this_list)
 
 
 the_animal = Animal()
-print(the_animal.property_1['key_1'])
-print(the_animal.this_list)
-print(the_animal.this_list[0])
-print(the_animal.this_list[:2])
-#we can access PUBLIC property directly with class name
-print(Animal.this_list)
-
-#how to use private property ?
-#use underline sign _this_list
-#we cant access directly (with class name)
-
-
-#(self) in python (this) in js and ($this->) in php
+#we ignore the self and we don't use in ()
+the_animal.this_is_a_method()
