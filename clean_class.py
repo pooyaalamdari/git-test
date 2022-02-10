@@ -11,7 +11,11 @@ class Animal:
         pass
 
 class Tiger(Animal):
-    pass
+    def speak(self):
+        print('They are GREEEAAAT')
 
+
+#type(tiger) -> Tiger Class
+#NOT Animal class
 tiger = Tiger()
 tiger.speak()
