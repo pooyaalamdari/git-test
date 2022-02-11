@@ -9,6 +9,8 @@ try:
 except ValueError:
     print(f'{num} or {num2} was not a valid number')
 
+except ZeroDivisionError:
+    print('Numbers could not be divided')
 #if num2 is for example number but we get error
 #this line will be run
 except Exception as e:
