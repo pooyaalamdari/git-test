@@ -6,7 +6,8 @@ def my_decorator(func):
         print('origin function is finished')
     return wrapper
 
-@my_decorator
+#if we remove decorator (my_decorator)
+# @my_decorator
 def myfunc():
     print('My name is Pooya')
 
