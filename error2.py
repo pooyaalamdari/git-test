@@ -1,12 +1,16 @@
-num = input('What is a number? ')
+num = input('Enter a first number: ')
+num2 = input('Enter a seccond number: ')
 try:
     num = int(num)
-#if we got error ValueError block will run
+    num2 = int(num2)
+    total = num / num2
+
+#if num or num2 are invalid number ValueError will running
 except ValueError:
-    print(num, 'was not a valid number')
-# these are will not run
+    print(f'{num} or {num2} was not a valid number')
+
+#if num2 is for example number but we get error
+#this line will be run
 except Exception as e:
     print('Exception was run')
     print(type(e))
-    num = "Unknown"
-print(num)
