@@ -1,5 +1,3 @@
-def myfunc():
-    print('My name is Pooya')
 
 def my_decorator(func):
     def wrapper():
@@ -8,5 +6,12 @@ def my_decorator(func):
         print('origin function is finished')
     return wrapper
 
-new_func = my_decorator(myfunc)
-new_func()
+@my_decorator
+def myfunc():
+    print('My name is Pooya')
+
+#we don't need this anymore
+# [new_func = my_decorator(myfunc)]
+#bcz we use decorator
+
+myfunc()
